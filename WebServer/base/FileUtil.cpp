@@ -12,7 +12,7 @@
 using namespace std;
 
 AppendFile::AppendFile(const string& filename) : fp_(fopen(filename.c_str(), "ae")){
-    setbuffer(fp_, buffer_, sizeof(buffer_));
+    setbuffer(fp_, buffer_, sizeof(buffer_));  // 设置流缓冲区 
 }
 
 AppendFile::~AppendFile() {
