@@ -1,17 +1,13 @@
+#include "Thread.h"
+#include "CurrentThread.h"
 #include <assert.h>
 #include <errno.h>
 #include <linux/unistd.h>
-#include <pthread.h>
-#include <sched.h>
 #include <stdint.h>
 #include <stdio.h>
-#include <string>
 #include <sys/prctl.h>
 #include <sys/types.h>
 #include <unistd.h>
-#include <memory>
-#include "Thread.h"
-#include "CurrentThread.h"
 #include <iostream>
 using namespace std;
 
