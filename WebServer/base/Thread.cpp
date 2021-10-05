@@ -3,6 +3,7 @@
 #include <assert.h>
 #include <errno.h>
 #include <linux/unistd.h>
+#include <sched.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <sys/prctl.h>
@@ -18,6 +19,17 @@ namespace CurrentThread {
     __thread const char* t_threadName = "default";
 }
 
+pid_t gettid() { return static_cast<pid_t>(::syscall(SYS_gettid)); }
+
+void CurrentThread::cacheTid(){
+    if(t_cachedTid==0){
+        t_cachedTid=gettid();
+        t_tidStringLength =
+            snprintf(t_tidString, sizeof(t_tidString), "%5d ", t_cachedTid);
+    }
+}
+
+// 在线程中保留这些数据 
 struct ThreadData{
     typedef Thread::ThreadFunc ThreadFunc;
     ThreadFunc func_;
