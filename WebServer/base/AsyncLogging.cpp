@@ -45,5 +45,5 @@ void AsyncLogging::append(const char *logline, int len){
 }
 
 void AsyncLogging::threadFunc(){
-    
+    assert(running_)
 }
