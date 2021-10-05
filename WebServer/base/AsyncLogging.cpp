@@ -14,7 +14,7 @@ AsyncLogging::AsyncLogging(std::string logFileName, int flushInterval)
         : flushInterval_(flushInterval),
         running_(false),
         basename_(logFileName),
-        thread_(std::bind(&AsyncLogging::threadFunc(), this), "Logging"),
+        thread_(std::bind(&AsyncLogging::threadFunc, this), "Logging"),
         mutex_(),
         cond_(mutex_),
         currentBuffer_(new Buffer),
@@ -45,5 +45,17 @@ void AsyncLogging::append(const char *logline, int len){
 }
 
 void AsyncLogging::threadFunc(){
-    assert(running_)
+    assert(running_);
+    latch_.countDown();
+    LogFile output(basename_);
+    BufferPtr newBuffer1(new Buffer);
+    BufferPtr newBuffer2(new Buffer);
+    newBuffer1->bzero();
+    newBuffer2->bzero();
+    BufferVector buffersToWrite;
+    buffersToWrite.reserve(16);
+    while (running_) {
+        
+    }
+    
 }
