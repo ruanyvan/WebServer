@@ -68,9 +68,42 @@ void AsyncLogging::threadFunc(){
             currentBuffer_.reset();
 
             currentBuffer_ = std::move(newBuffer1);
-            
+            buffersToWrite.swap(buffers_);
+            if(!nextBuffer_){
+                nextBuffer_ = std::move(newBuffer2);
+            }
         }
 
+        assert(!buffersToWrite.empty());
+
+        if(buffersToWrite.size() >25){
+            buffersToWrite.erase(buffersToWrite.begin()+2, buffersToWrite.end());
+        }
+
+        for (size_t i=0; i<buffersToWrite.size(); ++i) {
+            output.append(buffersToWrite[i]->data(), buffersToWrite[i]->length());
+        }
+
+        if(buffersToWrite.size() > 2){
+            buffersToWrite.resize(2);
+        }
+
+        if(!newBuffer1){
+            assert(!buffersToWrite.empty());
+            newBuffer1 = buffersToWrite.back();
+            buffersToWrite.pop_back();
+            newBuffer1->reset();
+        }
+
+        if(!newBuffer2){
+            assert(!buffersToWrite.empty());
+            newBuffer2 = buffersToWrite.back();
+            buffersToWrite.pop_back();
+            newBuffer2->reset();
+        }
+
+        buffersToWrite.clear();
+        output.flush();
     }
-    
+    output.flush();
 }
