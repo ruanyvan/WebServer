@@ -55,7 +55,14 @@ void AsyncLogging::threadFunc(){
     BufferVector buffersToWrite;
     buffersToWrite.reserve(16);
     while (running_) {
-        
+        assert(newBuffer1 && newBuffer1->length()==0);
+        assert(newBuffer2 && newBuffer2->length()==0);
+        assert(buffersToWrite.empty());
+        {
+            MutexLockGuard lock(mutex_);
+            
+        }
+
     }
     
 }
