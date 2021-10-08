@@ -1,9 +1,10 @@
 #include <arpa/inet.h>
+#include <cstring>
 #include <fcntl.h>
 #include <netinet/in.h>
-#include <cstdio>
-#include <cstdlib>
-#include <string>
+#include <strings.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include <sys/epoll.h>
 #include <sys/socket.h>
 #include <sys/types.h>
@@ -13,7 +14,8 @@
 using namespace std;
 
 #define MAXSIZE 1024
-#define IPADDRES "127.0.0.1"
+// const char* IPADDRESS = "127.0.0.1";
+#define IPADDRESS "127.0.0.1"
 #define SERV_PORT 8888
 #define FDSIZE 1024
 #define EPOLLENENTS 20
@@ -44,6 +46,7 @@ int main(int argc, char *argv[]) {
   servaddr.sin_family = AF_INET;
   servaddr.sin_port = htons(SERV_PORT);
   inet_pton(AF_INET, IPADDRESS, &servaddr.sin_addr);
+//   inet_pton(AF_INET, const char *__restrict __cp, void *__restrict __buf)
   char buff[4096];
   buff[0] = '\0';
   // 发空串
