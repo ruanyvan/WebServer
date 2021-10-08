@@ -3,6 +3,7 @@
 #include <cstring>
 #include <memory>
 #include <netinet/in.h>
+#include <sys/types.h>
 #include <sys/epoll.h>
 #include <sys/socket.h>
 #include <functional>
@@ -41,7 +42,6 @@ void Server::handNewConn(){
     memset(&client_addr, 0, sizeof(struct sockaddr_in));
     socklen_t client_addr_len = sizeof(client_addr);
     int accept_fd = 0;
-
     while((accept_fd = accept(listenFd_, (struct sockaddr *)&client_addr, 
             &client_addr_len))<0){
         EventLoop* loop = eventLoopThreadPool_->getNextLoop();
