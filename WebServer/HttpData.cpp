@@ -127,9 +127,9 @@ HttpData::HttpData(EventLoop* loop, int connfd)
         state_(STATE_PARSE_URI),
         hState_(H_START),
         keepAlive_(false) {
-            channel_->setReadHandler(bind(&HttpData::handleRead(), this));
-            channel_->setWriteHandler(bind(&HttpData::handleWrite(), this));
-            channel_->setConnHandler(bind(&HttpData::handleConn(), this));
+            channel_->setReadHandler(bind(&HttpData::handleRead, this));
+            channel_->setWriteHandler(bind(&HttpData::handleWrite, this));
+            channel_->setConnHandler(bind(&HttpData::handleConn, this));
 }
 
 void HttpData::reset() {

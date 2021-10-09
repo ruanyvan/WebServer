@@ -11,7 +11,7 @@ EventLoopThreadPool::EventLoopThreadPool(EventLoop* baseLoop, int numThreads)
 void EventLoopThreadPool::start(){
     baseLoop_->assertInLoopThread();
     started_ = true;
-    for (size_t i = 0; i < numThreads_; ++i)
+    for (int i = 0; i < numThreads_; ++i)
     {
         std::shared_ptr<EventLoopThread> t(new EventLoopThread());
         threads_.push_back(t);

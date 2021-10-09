@@ -35,8 +35,8 @@ EventLoop::EventLoop()
 
             // pwakeupChannel_->setEvents(EPOLLIN|EPOLLET|EPOLLONESHOT);
             pwakeupChannel_->setEvents(EPOLLIN|EPOLLET);
-            pwakeupChannel_->setReadHandler(bind(&EventLoop::handleRead, this);
-            pwakeupChannel_->setConnHandler(bind(&EventLoop::handleConn, this);
+            pwakeupChannel_->setReadHandler(bind(&EventLoop::handleRead, this));
+            pwakeupChannel_->setConnHandler(bind(&EventLoop::handleConn, this));
             poller_->epoll_add(pwakeupChannel_, 0);    
 }
 
@@ -92,10 +92,10 @@ void EventLoop::loop(){
     quit_ = false;
     
     std::vector<SP_Channel> ret;
-    while (!quit)
+    while (!quit_)
     {
         ret.clear();
-        ret = poller->poll();
+        ret = poller_->poll();
         eventHandling_ = true;
         for(auto& it : ret) it->handleEvents();
         eventHandling_ = false;
