@@ -5,7 +5,7 @@
 #include "base/Logging.h"
 
 int main(int argc, char* argv[]){
-    int threadNnm = 4;
+    int threadNum = 4;
     int port = 80;
     std::string logPath = "./WebServer.log";
 
@@ -42,7 +42,7 @@ int main(int argc, char* argv[]){
     LOG<<"_PTHREADS is not defined!";
 #endif
     EventLoop mainLoop;
-    Server myHTTPServer(&mainLoop, threadNnm, port);
+    Server myHTTPServer(&mainLoop, threadNum, port);
     myHTTPServer.start();
     mainLoop.loop();
     
