@@ -40,6 +40,14 @@ class FixedBuffer : noncopyable{
 };
 
 class LogStream : noncopyable{
+    private:
+    void staticCheck();
+
+    template<typename T>
+    void formatInteger(T);
+    
+    static const int kMaxNumericSize = 32;
+
     public:
     typedef FixedBuffer<kSmallBuffer> Buffer;
 
@@ -95,15 +103,8 @@ class LogStream : noncopyable{
     }
     const Buffer& buffer() const{ return buffer_; }
     void resetBuffer() { buffer_.reset(); }
-    
+
     private:
-    void staticCheck();
-
-    template<typename T>
-    void formatInteger(T);
-
     Buffer buffer_;
-    
-    static const int kMaxNumericSize = 32;
 };
 
