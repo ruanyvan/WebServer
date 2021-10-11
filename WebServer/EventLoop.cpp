@@ -27,7 +27,7 @@ EventLoop::EventLoop()
         threadId_(CurrentThread::tid()),
         pwakeupChannel_(new Channel(this, wakeupFd_)){
             if(t_loopInThisThread){
-                LOG<<" Another EventLoop "<<t_loopInThisThread<<" exists in this thread "<<threadId_;
+                LOG<<"Another EventLoop "<<t_loopInThisThread<<" exists in this thread "<<threadId_;
             }else
             {
                 t_loopInThisThread = this;
