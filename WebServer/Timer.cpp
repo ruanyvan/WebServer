@@ -22,7 +22,7 @@ TimerNode::~TimerNode(){
 }
 
 TimerNode::TimerNode(TimerNode& tn)
-        :SPHttpData(tn.SPHttpData), expiredTime_(0) { }
+        :expiredTime_(0), SPHttpData(tn.SPHttpData) { }
 
 void TimerNode::update(int timeout){
     struct timeval now;

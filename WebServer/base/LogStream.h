@@ -57,7 +57,8 @@ class LogStream : noncopyable{
     LogStream& operator<<(long long);
     LogStream& operator<<(unsigned long long);
 
-    LogStream& operator<<(const void*);
+    //LogStream& operator<<(const void*);
+    LogStream& operator<<(void const*);
 
     LogStream& operator<<(float v){
         *this << static_cast<double>(v);

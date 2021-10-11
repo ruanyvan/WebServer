@@ -41,8 +41,8 @@ class AsyncLogging : noncopyable{
     bool running_;
     std::string basename_;
     Thread thread_;
-    Condition cond_;
     MutexLock mutex_;
+    Condition cond_;
     BufferPtr currentBuffer_;
     BufferPtr nextBuffer_;
     BufferVector buffers_;
