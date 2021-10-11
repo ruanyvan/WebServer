@@ -13,7 +13,7 @@ template<int SIZE>
 class FixedBuffer : noncopyable{
     public:
     FixedBuffer() : cur_(data_) { }
-    ~FixedBuffer();
+    ~FixedBuffer()=default;
 
     void append(const char* buf, size_t len){
         if(avail() > static_cast<int>(len)){
