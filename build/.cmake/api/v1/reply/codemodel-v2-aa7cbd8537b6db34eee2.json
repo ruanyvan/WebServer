@@ -1,0 +1,152 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12.0"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "WebServer",
+					"childIndexes" : 
+					[
+						2,
+						4
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "WebServer",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "WebServer/base",
+					"childIndexes" : 
+					[
+						3
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "WebServer/base",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "WebServer/base/tests",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12.0"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "WebServer/base/tests",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "WebServer/tests",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "WebServer/tests",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					],
+					"name" : "WebServer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 4,
+					"id" : "HTTPClient::@db73784bfb6252a8a93b",
+					"jsonFile" : "target-HTTPClient-Debug-7db04f417795350eddaa.json",
+					"name" : "HTTPClient",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "LoggingTest::@39786a75b0bd06075437",
+					"jsonFile" : "target-LoggingTest-Debug-1e4b63d0f51cdd73aec6.json",
+					"name" : "LoggingTest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "WebServer::@dbf45654fd97f6e599d0",
+					"jsonFile" : "target-WebServer-Debug-491ace7f8da15d96a47d.json",
+					"name" : "WebServer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "libserver_base::@5a67b0a44b3e32255f64",
+					"jsonFile" : "target-libserver_base-Debug-4b4dddb1fcae756cebb9.json",
+					"name" : "libserver_base",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ruanyuan/server/WebServer/build",
+		"source" : "/home/ruanyuan/server/WebServer"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

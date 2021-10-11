@@ -1,0 +1,97 @@
+[
+{
+  "directory": "/home/ruanyuan/server/WebServer/build/WebServer",
+  "command": "g++   -I/home/ruanyuan/server/WebServer/base  -g -Wall -std=c++11 -D_PTHREADS -Wno-unused-parameter -O0   -o CMakeFiles/WebServer.dir/Channel.cpp.o -c /home/ruanyuan/server/WebServer/WebServer/Channel.cpp",
+  "file": "/home/ruanyuan/server/WebServer/WebServer/Channel.cpp"
+},
+{
+  "directory": "/home/ruanyuan/server/WebServer/build/WebServer",
+  "command": "g++   -I/home/ruanyuan/server/WebServer/base  -g -Wall -std=c++11 -D_PTHREADS -Wno-unused-parameter -O0   -o CMakeFiles/WebServer.dir/Epoll.cpp.o -c /home/ruanyuan/server/WebServer/WebServer/Epoll.cpp",
+  "file": "/home/ruanyuan/server/WebServer/WebServer/Epoll.cpp"
+},
+{
+  "directory": "/home/ruanyuan/server/WebServer/build/WebServer",
+  "command": "g++   -I/home/ruanyuan/server/WebServer/base  -g -Wall -std=c++11 -D_PTHREADS -Wno-unused-parameter -O0   -o CMakeFiles/WebServer.dir/EventLoop.cpp.o -c /home/ruanyuan/server/WebServer/WebServer/EventLoop.cpp",
+  "file": "/home/ruanyuan/server/WebServer/WebServer/EventLoop.cpp"
+},
+{
+  "directory": "/home/ruanyuan/server/WebServer/build/WebServer",
+  "command": "g++   -I/home/ruanyuan/server/WebServer/base  -g -Wall -std=c++11 -D_PTHREADS -Wno-unused-parameter -O0   -o CMakeFiles/WebServer.dir/EventLoopThread.cpp.o -c /home/ruanyuan/server/WebServer/WebServer/EventLoopThread.cpp",
+  "file": "/home/ruanyuan/server/WebServer/WebServer/EventLoopThread.cpp"
+},
+{
+  "directory": "/home/ruanyuan/server/WebServer/build/WebServer",
+  "command": "g++   -I/home/ruanyuan/server/WebServer/base  -g -Wall -std=c++11 -D_PTHREADS -Wno-unused-parameter -O0   -o CMakeFiles/WebServer.dir/EventLoopThreadPool.cpp.o -c /home/ruanyuan/server/WebServer/WebServer/EventLoopThreadPool.cpp",
+  "file": "/home/ruanyuan/server/WebServer/WebServer/EventLoopThreadPool.cpp"
+},
+{
+  "directory": "/home/ruanyuan/server/WebServer/build/WebServer",
+  "command": "g++   -I/home/ruanyuan/server/WebServer/base  -g -Wall -std=c++11 -D_PTHREADS -Wno-unused-parameter -O0   -o CMakeFiles/WebServer.dir/HttpData.cpp.o -c /home/ruanyuan/server/WebServer/WebServer/HttpData.cpp",
+  "file": "/home/ruanyuan/server/WebServer/WebServer/HttpData.cpp"
+},
+{
+  "directory": "/home/ruanyuan/server/WebServer/build/WebServer",
+  "command": "g++   -I/home/ruanyuan/server/WebServer/base  -g -Wall -std=c++11 -D_PTHREADS -Wno-unused-parameter -O0   -o CMakeFiles/WebServer.dir/Main.cpp.o -c /home/ruanyuan/server/WebServer/WebServer/Main.cpp",
+  "file": "/home/ruanyuan/server/WebServer/WebServer/Main.cpp"
+},
+{
+  "directory": "/home/ruanyuan/server/WebServer/build/WebServer",
+  "command": "g++   -I/home/ruanyuan/server/WebServer/base  -g -Wall -std=c++11 -D_PTHREADS -Wno-unused-parameter -O0   -o CMakeFiles/WebServer.dir/Server.cpp.o -c /home/ruanyuan/server/WebServer/WebServer/Server.cpp",
+  "file": "/home/ruanyuan/server/WebServer/WebServer/Server.cpp"
+},
+{
+  "directory": "/home/ruanyuan/server/WebServer/build/WebServer",
+  "command": "g++   -I/home/ruanyuan/server/WebServer/base  -g -Wall -std=c++11 -D_PTHREADS -Wno-unused-parameter -O0   -o CMakeFiles/WebServer.dir/Timer.cpp.o -c /home/ruanyuan/server/WebServer/WebServer/Timer.cpp",
+  "file": "/home/ruanyuan/server/WebServer/WebServer/Timer.cpp"
+},
+{
+  "directory": "/home/ruanyuan/server/WebServer/build/WebServer",
+  "command": "g++   -I/home/ruanyuan/server/WebServer/base  -g -Wall -std=c++11 -D_PTHREADS -Wno-unused-parameter -O0   -o CMakeFiles/WebServer.dir/Util.cpp.o -c /home/ruanyuan/server/WebServer/WebServer/Util.cpp",
+  "file": "/home/ruanyuan/server/WebServer/WebServer/Util.cpp"
+},
+{
+  "directory": "/home/ruanyuan/server/WebServer/build/WebServer/base",
+  "command": "g++   -I/home/ruanyuan/server/WebServer/base  -g -Wall -std=c++11 -D_PTHREADS -Wno-unused-parameter -O0   -o CMakeFiles/libserver_base.dir/AsyncLogging.cpp.o -c /home/ruanyuan/server/WebServer/WebServer/base/AsyncLogging.cpp",
+  "file": "/home/ruanyuan/server/WebServer/WebServer/base/AsyncLogging.cpp"
+},
+{
+  "directory": "/home/ruanyuan/server/WebServer/build/WebServer/base",
+  "command": "g++   -I/home/ruanyuan/server/WebServer/base  -g -Wall -std=c++11 -D_PTHREADS -Wno-unused-parameter -O0   -o CMakeFiles/libserver_base.dir/CountDownLatch.cpp.o -c /home/ruanyuan/server/WebServer/WebServer/base/CountDownLatch.cpp",
+  "file": "/home/ruanyuan/server/WebServer/WebServer/base/CountDownLatch.cpp"
+},
+{
+  "directory": "/home/ruanyuan/server/WebServer/build/WebServer/base",
+  "command": "g++   -I/home/ruanyuan/server/WebServer/base  -g -Wall -std=c++11 -D_PTHREADS -Wno-unused-parameter -O0   -o CMakeFiles/libserver_base.dir/FileUtil.cpp.o -c /home/ruanyuan/server/WebServer/WebServer/base/FileUtil.cpp",
+  "file": "/home/ruanyuan/server/WebServer/WebServer/base/FileUtil.cpp"
+},
+{
+  "directory": "/home/ruanyuan/server/WebServer/build/WebServer/base",
+  "command": "g++   -I/home/ruanyuan/server/WebServer/base  -g -Wall -std=c++11 -D_PTHREADS -Wno-unused-parameter -O0   -o CMakeFiles/libserver_base.dir/LogFile.cpp.o -c /home/ruanyuan/server/WebServer/WebServer/base/LogFile.cpp",
+  "file": "/home/ruanyuan/server/WebServer/WebServer/base/LogFile.cpp"
+},
+{
+  "directory": "/home/ruanyuan/server/WebServer/build/WebServer/base",
+  "command": "g++   -I/home/ruanyuan/server/WebServer/base  -g -Wall -std=c++11 -D_PTHREADS -Wno-unused-parameter -O0   -o CMakeFiles/libserver_base.dir/Logging.cpp.o -c /home/ruanyuan/server/WebServer/WebServer/base/Logging.cpp",
+  "file": "/home/ruanyuan/server/WebServer/WebServer/base/Logging.cpp"
+},
+{
+  "directory": "/home/ruanyuan/server/WebServer/build/WebServer/base",
+  "command": "g++   -I/home/ruanyuan/server/WebServer/base  -g -Wall -std=c++11 -D_PTHREADS -Wno-unused-parameter -O0   -o CMakeFiles/libserver_base.dir/LogStream.cpp.o -c /home/ruanyuan/server/WebServer/WebServer/base/LogStream.cpp",
+  "file": "/home/ruanyuan/server/WebServer/WebServer/base/LogStream.cpp"
+},
+{
+  "directory": "/home/ruanyuan/server/WebServer/build/WebServer/base",
+  "command": "g++   -I/home/ruanyuan/server/WebServer/base  -g -Wall -std=c++11 -D_PTHREADS -Wno-unused-parameter -O0   -o CMakeFiles/libserver_base.dir/Thread.cpp.o -c /home/ruanyuan/server/WebServer/WebServer/base/Thread.cpp",
+  "file": "/home/ruanyuan/server/WebServer/WebServer/base/Thread.cpp"
+},
+{
+  "directory": "/home/ruanyuan/server/WebServer/build/WebServer/base/tests",
+  "command": "g++   -I/home/ruanyuan/server/WebServer/base  -g -Wall -std=c++11 -D_PTHREADS -Wno-unused-parameter -O0   -o CMakeFiles/LoggingTest.dir/LoggingTest.cpp.o -c /home/ruanyuan/server/WebServer/WebServer/base/tests/LoggingTest.cpp",
+  "file": "/home/ruanyuan/server/WebServer/WebServer/base/tests/LoggingTest.cpp"
+},
+{
+  "directory": "/home/ruanyuan/server/WebServer/build/WebServer/tests",
+  "command": "g++   -I/home/ruanyuan/server/WebServer/base  -g -Wall -std=c++11 -D_PTHREADS -Wno-unused-parameter -O0   -o CMakeFiles/HTTPClient.dir/HTTPClient.cpp.o -c /home/ruanyuan/server/WebServer/WebServer/tests/HTTPClient.cpp",
+  "file": "/home/ruanyuan/server/WebServer/WebServer/tests/HTTPClient.cpp"
+}
+]

@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ruanyuan/server/WebServer/WebServer/tests/HTTPClient.cpp
+arpa/inet.h
+-
+cstring
+-
+fcntl.h
+-
+netinet/in.h
+-
+strings.h
+-
+stdio.h
+-
+stdlib.h
+-
+sys/epoll.h
+-
+sys/socket.h
+-
+sys/types.h
+-
+time.h
+-
+unistd.h
+-
+iostream
+-
+
