@@ -14,15 +14,10 @@
 * 编码规范
 * Linux环境下各种工具的使用
 * 版本控制Git
-* Makefile和CMakeLists文件的编写
-* 自动化构建工具Travis CI的使用 
 
 ## Envoriment
 * OS: WSL2 Ubuntu20.04LTS 
-* Compiler: Clang++ 10.0 
-
-## Build
-    ./build.sh
+* Compiler: g++ 9.3.0 
 
 ## Usage
     ./WebServer [-t thread_numbers] [-p port] [-l log_file_path(should begin with '/')]
