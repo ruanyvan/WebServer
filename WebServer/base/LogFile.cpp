@@ -12,7 +12,7 @@ LogFile::LogFile(const string& basename, int flushEveryN)
         :basename_(basename),
         flushEveryN_(flushEveryN),
         count_(0),
-        mutex_(new MutexLock) {
+        mutex_(new MutexLock()) {
             file_.reset(new AppendFile(basename));
 }
 
