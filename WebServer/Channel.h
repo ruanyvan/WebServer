@@ -41,7 +41,9 @@ class Channel{
     int getFd();
     void setFd(int fd);
 
-    void setHolder(std::shared_ptr<HttpData> holder) { holder_=holder; }
+    void setHolder(std::shared_ptr<HttpData> holder) { 
+        holder_=holder; 
+    }
     std::shared_ptr<HttpData> getHolder(){
         std::shared_ptr<HttpData> ret(holder_.lock());
         return ret;
