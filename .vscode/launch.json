@@ -1,11 +1,8 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "g++ - Build and debug active file",
+            "name": "g++ Build and debug",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/WebServer/WebServer",
@@ -21,6 +18,7 @@
             "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": false,
+            "miDebuggerPath": "/home/ruanyuan/server/gdb",
             "MIMode": "gdb",
             "setupCommands": [
                 {
@@ -29,9 +27,9 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "Build",
+            "preLaunchTask": "Build"
             // "miDebuggerPath": "/usr/bin/gdb"
-            "miDebuggerPath": "~/serverWebServer/.vscode/gdb.sh"
+            // "miDebuggerPath": "/home/ruanyuan/serverWebServer/.vscode/gdb.sh"  报错，因为该shell文件无执行权限
         }
     ]
 }
