@@ -13,7 +13,7 @@
 #include "base/Logging.h"
 
 Server::Server(EventLoop* loop, int threadNum, int port)
-        : loop_(loop),
+        : loop_(loop),  //指针直接赋值地址 
         threadNum_(threadNum),
         eventLoopThreadPool_(new EventLoopThreadPool(loop_, threadNum)),
         started_(false),

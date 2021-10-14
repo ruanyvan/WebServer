@@ -10,9 +10,9 @@
             "request": "launch",
             "program": "${workspaceFolder}/build/WebServer/WebServer",
             "args": [
-                "-t 4",
-                "-p 8088",
-                "-l /home/ruanyuan/server/WebServer/ruanyuan.log"
+                // "-t 3",
+                // "-p 88",
+                // "-l /home/ruanyuan/server/WebServer"
             ],
             "sourceFileMap":{
                 "/build/glibc-eX1tMB": "/usr/src/glibc"
@@ -30,7 +30,8 @@
                 }
             ],
             "preLaunchTask": "Build",
-            "miDebuggerPath": "/usr/bin/gdb"
+            // "miDebuggerPath": "/usr/bin/gdb"
+            "miDebuggerPath": "~/serverWebServer/.vscode/gdb.sh"
         }
     ]
 }
