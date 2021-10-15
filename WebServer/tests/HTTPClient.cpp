@@ -16,7 +16,7 @@ using namespace std;
 #define MAXSIZE 1024
 // const char* IPADDRESS = "127.0.0.1";
 #define IPADDRESS "127.0.0.1"
-#define SERV_PORT 8888
+#define SERV_PORT 8088
 #define FDSIZE 1024
 #define EPOLLENENTS 20
 
@@ -38,22 +38,27 @@ int setSocketNonBlocking1(int fd) {
   if (fcntl(fd, F_SETFL, flag) == -1) return -1;
   return 0;
 }
+
 int main(int argc, char *argv[]) {
   int sockfd;
   struct sockaddr_in servaddr;
+
   sockfd = socket(AF_INET, SOCK_STREAM, 0);
+
   bzero(&servaddr, sizeof(servaddr));
   servaddr.sin_family = AF_INET;
   servaddr.sin_port = htons(SERV_PORT);
   inet_pton(AF_INET, IPADDRESS, &servaddr.sin_addr);
-//   inet_pton(AF_INET, const char *__restrict __cp, void *__restrict __buf)
+  // inet_pton(AF_INET, const char *__restrict __cp, void *__restrict __buf);
+
   char buff[4096];
   buff[0] = '\0';
+
   // 发空串
   const char *p = " ";
   if (connect(sockfd, (struct sockaddr *)&servaddr, sizeof(servaddr)) == 0) {
     setSocketNonBlocking1(sockfd);
-    cout << "1:" << endl;
+    cout << "=========1:" << endl;
     ssize_t n = write(sockfd, p, strlen(p));
     cout << "strlen(p) = " << strlen(p) << endl;
     sleep(1);
@@ -66,12 +71,13 @@ int main(int argc, char *argv[]) {
   }
   sleep(1);
 
+
   // 发"GET  HTTP/1.1"
   p = "GET  HTTP/1.1";
   sockfd = socket(AF_INET, SOCK_STREAM, 0);
   if (connect(sockfd, (struct sockaddr *)&servaddr, sizeof(servaddr)) == 0) {
     setSocketNonBlocking1(sockfd);
-    cout << "2:" << endl;
+    cout << "=========2:" << endl;
     ssize_t n = write(sockfd, p, strlen(p));
     cout << "strlen(p) = " << strlen(p) << endl;
     sleep(1);
@@ -86,15 +92,15 @@ int main(int argc, char *argv[]) {
 
   // 发
   // GET  HTTP/1.1
-  // Host: 192.168.52.135:8888
+  // Host: 192.168.52.135:8088
   // Content-Type: application/x-www-form-urlencoded
   // Connection: Keep-Alive
-  p = "GET / HTTP/1.1\r\nHost: 192.168.52.135:8888\r\nContent-Type: "
+  p = "GET / HTTP/1.1\r\nHost: 192.168.52.135:8088\r\nContent-Type: "
       "application/x-www-form-urlencoded\r\nConnection: Keep-Alive\r\n\r\n";
   sockfd = socket(AF_INET, SOCK_STREAM, 0);
   if (connect(sockfd, (struct sockaddr *)&servaddr, sizeof(servaddr)) == 0) {
     setSocketNonBlocking1(sockfd);
-    cout << "3:" << endl;
+    cout << "========3:" << endl;
     ssize_t n = write(sockfd, p, strlen(p));
     cout << "strlen(p) = " << strlen(p) << endl;
     sleep(1);
@@ -107,6 +113,8 @@ int main(int argc, char *argv[]) {
   }
   return 0;
 }
+
+
 
 // static void handle_connection(int sockfd)
 // {
