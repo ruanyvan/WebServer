@@ -21,7 +21,7 @@ int main(int argc, char* argv[]){
         } 
         case 'l':{
             logPath = optarg;
-            if(logPath.size() <2 || optarg[0]!= '/'){
+            if(logPath.size() <2 || optarg[0]!= '/'){   // 这要求路径开始必须为：""/"  
                 printf("logPath should start with \"/\"\n");
                 abort();
             }

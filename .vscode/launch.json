@@ -5,7 +5,8 @@
             "name": "g++ Build and debug",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/WebServer/WebServer",
+            // "program": "${workspaceFolder}/build/WebServer/WebServer", //测试 Server 
+            "program": "${workspaceFolder}/build/WebServer/tests/HTTPClient",
             "args": [
                 // "-t 3",
                 // "-p 88",

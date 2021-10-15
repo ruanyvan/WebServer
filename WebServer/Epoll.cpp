@@ -19,7 +19,7 @@ using namespace std;
 
 
 const int EVENTSNUM=4096;
-const int EPOLLWAIT_TIME=10000;
+const int EPOLLWAIT_TIME=3000;
 
 typedef shared_ptr<Channel> SP_Channel;
 
