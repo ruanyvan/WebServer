@@ -27,8 +27,8 @@
                 }
             ],
             "preLaunchTask": "Build",
-            // "miDebuggerPath": "/usr/bin/gdb"
-            "miDebuggerPath": "/home/ruanyuan/server/WebServer/gdb.sh" // 无法输入密码，导致报错
+            "miDebuggerPath": "/usr/bin/gdb"
+            // "miDebuggerPath": "/home/ruanyuan/server/WebServer/gdb.sh" // 无法输入密码，导致报错
         }
     ]
 }
