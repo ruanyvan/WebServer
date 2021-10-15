@@ -18,7 +18,6 @@
             "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": false,
-            "miDebuggerPath": "/home/ruanyuan/server/gdb",
             "MIMode": "gdb",
             "setupCommands": [
                 {
@@ -27,9 +26,9 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "Build"
+            "preLaunchTask": "Build",
             // "miDebuggerPath": "/usr/bin/gdb"
-            // "miDebuggerPath": "/home/ruanyuan/serverWebServer/.vscode/gdb.sh"  报错，因为该shell文件无执行权限
+            "miDebuggerPath": "/home/ruanyuan/server/WebServer/gdb.sh" // 无法输入密码，导致报错
         }
     ]
 }
