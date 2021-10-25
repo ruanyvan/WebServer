@@ -10,7 +10,8 @@
             "intelliSenseMode": "linux-gcc-x64",
             "cStandard": "c11",
             "cppStandard": "c++17",
-            "compileCommands": "${workspaceFolder}/build/compile_commands.json"
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+            "compilerPath": "/usr/bin/g++"
         }
     ],
     "version": 4
