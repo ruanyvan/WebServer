@@ -47,7 +47,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -Wall -std=c++11 -D_PTHREADS -Wno-unused-parameter -O0  "
+					"fragment" : "-O0  "
 				}
 			],
 			"includes" : 
