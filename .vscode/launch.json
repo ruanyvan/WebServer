@@ -2,12 +2,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "g++ Build and debug",
+            "name": "g++ debug",
             "type": "cppdbg",
             "request": "launch",
-            // "program": "${workspaceFolder}/build/WebServer/WebServer", //测试 Server 
+            "program": "${workspaceFolder}/build/WebServer/WebServer", //测试 Server 
             // "program": "${workspaceFolder}/build/WebServer/tests/HTTPClient",
-            "program": "${workspaceFolder}/build/WebServer/base/tests/LoggingTest",
+            // "program": "${workspaceFolder}/build/WebServer/base/tests/LoggingTest",
             "args": [
                 // "-t 3",
                 // "-p 88",
