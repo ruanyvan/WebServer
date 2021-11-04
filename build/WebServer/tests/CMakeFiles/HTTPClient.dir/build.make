@@ -60,15 +60,15 @@ include WebServer/tests/CMakeFiles/HTTPClient.dir/flags.make
 WebServer/tests/CMakeFiles/HTTPClient.dir/HTTPClient.cpp.o: WebServer/tests/CMakeFiles/HTTPClient.dir/flags.make
 WebServer/tests/CMakeFiles/HTTPClient.dir/HTTPClient.cpp.o: ../WebServer/tests/HTTPClient.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruanyuan/server/WebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object WebServer/tests/CMakeFiles/HTTPClient.dir/HTTPClient.cpp.o"
-	cd /home/ruanyuan/server/WebServer/build/WebServer/tests && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HTTPClient.dir/HTTPClient.cpp.o -c /home/ruanyuan/server/WebServer/WebServer/tests/HTTPClient.cpp
+	cd /home/ruanyuan/server/WebServer/build/WebServer/tests && /bin/x86_64-linux-gnu-g++-10  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HTTPClient.dir/HTTPClient.cpp.o -c /home/ruanyuan/server/WebServer/WebServer/tests/HTTPClient.cpp
 
 WebServer/tests/CMakeFiles/HTTPClient.dir/HTTPClient.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HTTPClient.dir/HTTPClient.cpp.i"
-	cd /home/ruanyuan/server/WebServer/build/WebServer/tests && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruanyuan/server/WebServer/WebServer/tests/HTTPClient.cpp > CMakeFiles/HTTPClient.dir/HTTPClient.cpp.i
+	cd /home/ruanyuan/server/WebServer/build/WebServer/tests && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruanyuan/server/WebServer/WebServer/tests/HTTPClient.cpp > CMakeFiles/HTTPClient.dir/HTTPClient.cpp.i
 
 WebServer/tests/CMakeFiles/HTTPClient.dir/HTTPClient.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HTTPClient.dir/HTTPClient.cpp.s"
-	cd /home/ruanyuan/server/WebServer/build/WebServer/tests && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruanyuan/server/WebServer/WebServer/tests/HTTPClient.cpp -o CMakeFiles/HTTPClient.dir/HTTPClient.cpp.s
+	cd /home/ruanyuan/server/WebServer/build/WebServer/tests && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruanyuan/server/WebServer/WebServer/tests/HTTPClient.cpp -o CMakeFiles/HTTPClient.dir/HTTPClient.cpp.s
 
 # Object files for target HTTPClient
 HTTPClient_OBJECTS = \

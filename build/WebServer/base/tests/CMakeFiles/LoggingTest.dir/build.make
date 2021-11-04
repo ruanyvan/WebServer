@@ -60,15 +60,15 @@ include WebServer/base/tests/CMakeFiles/LoggingTest.dir/flags.make
 WebServer/base/tests/CMakeFiles/LoggingTest.dir/LoggingTest.cpp.o: WebServer/base/tests/CMakeFiles/LoggingTest.dir/flags.make
 WebServer/base/tests/CMakeFiles/LoggingTest.dir/LoggingTest.cpp.o: ../WebServer/base/tests/LoggingTest.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruanyuan/server/WebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object WebServer/base/tests/CMakeFiles/LoggingTest.dir/LoggingTest.cpp.o"
-	cd /home/ruanyuan/server/WebServer/build/WebServer/base/tests && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LoggingTest.dir/LoggingTest.cpp.o -c /home/ruanyuan/server/WebServer/WebServer/base/tests/LoggingTest.cpp
+	cd /home/ruanyuan/server/WebServer/build/WebServer/base/tests && /bin/x86_64-linux-gnu-g++-10  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LoggingTest.dir/LoggingTest.cpp.o -c /home/ruanyuan/server/WebServer/WebServer/base/tests/LoggingTest.cpp
 
 WebServer/base/tests/CMakeFiles/LoggingTest.dir/LoggingTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LoggingTest.dir/LoggingTest.cpp.i"
-	cd /home/ruanyuan/server/WebServer/build/WebServer/base/tests && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruanyuan/server/WebServer/WebServer/base/tests/LoggingTest.cpp > CMakeFiles/LoggingTest.dir/LoggingTest.cpp.i
+	cd /home/ruanyuan/server/WebServer/build/WebServer/base/tests && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruanyuan/server/WebServer/WebServer/base/tests/LoggingTest.cpp > CMakeFiles/LoggingTest.dir/LoggingTest.cpp.i
 
 WebServer/base/tests/CMakeFiles/LoggingTest.dir/LoggingTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LoggingTest.dir/LoggingTest.cpp.s"
-	cd /home/ruanyuan/server/WebServer/build/WebServer/base/tests && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruanyuan/server/WebServer/WebServer/base/tests/LoggingTest.cpp -o CMakeFiles/LoggingTest.dir/LoggingTest.cpp.s
+	cd /home/ruanyuan/server/WebServer/build/WebServer/base/tests && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruanyuan/server/WebServer/WebServer/base/tests/LoggingTest.cpp -o CMakeFiles/LoggingTest.dir/LoggingTest.cpp.s
 
 # Object files for target LoggingTest
 LoggingTest_OBJECTS = \

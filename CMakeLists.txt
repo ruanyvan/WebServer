@@ -1,10 +1,12 @@
-cmake_minimum_required(VERSION 3.12.0)
+cmake_minimum_required(VERSION 3.15.0)
 
 project(WebServer CXX)
 
-if(NOT CMAKE_BUILD_TYPE)
-    set(CMAKE_BUILD_TYPE "Debug")
-endif()
+set(CMAKE_CXX_FLAGS "-g -std=c++20 -O1 -Wall")
+
+#if(NOT CMAKE_BUILD_TYPE)
+#   set(CMAKE_BUILD_TYPE "Debug")
+#endif()
 
 set(CXX_FLAGS
     -g
@@ -15,9 +17,9 @@ set(CXX_FLAGS
 )
 
 
-set(CMAKE_CXX_COMPILER "g++")
-set(CMAKE_CXX_FLAGS_DEBUG "-O0")
-set(CMAKE_CXX_FLAGS_RELEASE "-O2")
+#set(CMAKE_CXX_COMPILER "g++")
+#set(CMAKE_CXX_FLAGS_DEBUG "-O0")
+#set(CMAKE_CXX_FLAGS_RELEASE "-O2")
 
 # string(REPLACE ";" " " CMAKE_CXX_FLAGS "${CXX_FLAGS}")
 
